@@ -9,7 +9,9 @@ pipeline {
      stage('Second Job') {
       steps {
         input message: 'User Input required'
+      }  
      }
+    }    
    }
  }
 }  
