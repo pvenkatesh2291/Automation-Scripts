@@ -12,5 +12,14 @@ pipeline {
         input message: 'User Input required'
       }
     }
+    stage('Third Job') {
+      when {
+        // skipe this stage unless this is on Master branch
+        branch "master"
+      }
+      steps {
+        echo "Not Master"
+      }
+    }
   }
 }  
