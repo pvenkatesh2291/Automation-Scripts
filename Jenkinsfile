@@ -6,7 +6,7 @@ pipeline {
       steps {
         echo "Hello folks, this is our first script"
         
-     stage('Second Job') {
+    stage('Second Job') {
       steps {
         input message: 'User Input required'
       }  
